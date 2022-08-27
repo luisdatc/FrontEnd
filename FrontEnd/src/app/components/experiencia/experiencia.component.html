@@ -1,0 +1,32 @@
+<div class="container-fluid">
+    <div class="row"> 
+      <div class="ol-xs-12 col-sm-12 col-md-12 col-lg-12" id="alineado">
+        <h1>Experiencia Laboral</h1>
+        <div>
+          <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
+            Nuevo Experiencia Laboral
+          </button>
+        </div>
+      </div>
+      <ul class="col-lg-12 col-md-10 col-sm-12 card-group" id="alineado">
+        <li class="card text-center"  id="exp-456" *ngFor="let Experiencia of expe">
+            <div class="text-center">
+                <div class="card-header">
+                    <h3>
+                        {{Experiencia.nombreE}}
+                    </h3>
+                    <div class="btn-group" role="group" id="bot-expe">
+                        <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}" *ngIf="isLogged"><i class="bi bi-pencil-square"></i></button>
+                        <button class="btn btn-danger" ((click)="delete(Experiencia.id)" *ngIf="isLogged"><i class="bi bi-trash"></i></button>            
+                    </div>
+                </div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>{{Experiencia.descripcionE}}</p>
+                    </blockquote>
+                </div>
+            </div>
+        </li>
+      </ul>
+    </div>
+  </div>

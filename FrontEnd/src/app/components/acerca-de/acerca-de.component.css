@@ -1,0 +1,91 @@
+#nombreapellido{
+margin-top: 55px;
+color:#fff;
+font-size: 1.5rem;
+}
+
+#fotodeperfil{
+    border-radius: 100%;
+}
+.container-fluid{
+    padding-top: 20px;
+}
+
+.acercade{
+    top:100px;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;  
+    color:#fff;  
+}
+
+.acercade2 p{
+    margin-top:20px;
+    font-weight: bold;
+}
+
+/*etiqueta nombre*/
+
+
+/*LINEAS DECORATIVAS*/
+h1{
+    font-size: 2rem;
+    width:bold;
+    display:inline;
+    text-decoration: underline;
+    position:relative;
+    color:#fff;
+}
+
+h1::after, h1::before{
+    content:"";
+    position:absolute;
+    width:50px;
+    height:2px;
+    background-color: #fff;
+    top:1.3rem;
+}
+
+h1::after{
+    right:-80px;
+}
+
+h1::before{
+    left:-80px;
+}
+
+#alineado{
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 575px) {
+    #fotodeperfil{
+        position: absolute;
+        width: 25%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;
+        left: 37%;
+        top: 260px;
+    }
+
+    p {
+        margin-top: 30px;
+        margin-bottom: 1rem;
+    }
+}
+@media (max-width: 390px) {
+    #fotodeperfil{
+        position: absolute;
+        width: 30%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;
+        left: 35%;
+        top: 200px;
+    }
+
+    #nombreapellido{
+        margin-top: 5px;
+    }
+}

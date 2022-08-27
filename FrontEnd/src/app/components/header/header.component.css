@@ -1,0 +1,15 @@
+div{
+
+    background: rgb(178,232,24);
+    background: linear-gradient(270deg, rgba(178,232,24,1) 0%, rgba(9,121,9,0.9752275910364145) 35%, rgba(5,115,245,1) 100%);}
+
+app-social{
+    float: right;
+    margin-top:  25px;
+}
+
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
